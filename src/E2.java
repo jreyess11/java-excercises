@@ -1,5 +1,4 @@
-import java.util.Scanner;
-import java.util.Arrays;
+import java.util.*;
 
 //author Jose Reyes
 public class E2 {

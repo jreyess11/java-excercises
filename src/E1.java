@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 //author Jose Reyes
 public class E1 {
