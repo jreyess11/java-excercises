@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class E2 {
     public static int count(int[] a, int b){
         int cont=0;
-        for (int i=0;i<a.length;i++) {
-            if (a[i] == b) {
+        for (int j : a) {
+            if (j == b) {
                 cont += 1;
             }
         }
