@@ -5,7 +5,11 @@ public class E9 {
 
     public static void main(String[] args) {
 
-        String[][] patron = new String[9][9];
+        int cant;
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Ingrese el tamano de su arreglo: ");
+        cant=scn.nextInt();
+        int[] arr = new int[cant];
 
         for (int i=0; i<9; i++){
             for (int j=0; j<9; j++){
