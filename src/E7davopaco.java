@@ -1,12 +1,7 @@
 import java.util.*;
-
-public class E52 {
-
-
-    /*
-     * Función para hacer arreglos con nums al azar de 0 a 10, recibiendo un arreglo
-     * tipo int[] y retornándolo.
-     */
+//@Author David Cardenas
+// https://github.com/davopaco/Java-Exercises/blob/main/Ejercicios%20Java/src/Ejercicio7.java
+public class E7davopaco {
 
     public static int[] hacerArreglos(int[] l) {
         int random = 0;
@@ -19,20 +14,19 @@ public class E52 {
     }
 
     public static void main(String[] args) {
-
-        //Declaración e inicilaización de variables.
-
         int ceros = 0, cont = 0;
         int[] vector = new int[20];
 
         System.out.println("===SEPTIMO EJERCICIO===");
 
-        //Se llama a la función para hacer el arreglo random.
-
         hacerArreglos(vector);
         System.out.println("El vector antes es: " + Arrays.toString(vector));
 
-
+        for (int num : vector) {
+            if (num == 0) {
+                ceros++;
+            }
+        }
 
         while (cont < ceros) {
             for (int i = 0; i < 20; i++) {
