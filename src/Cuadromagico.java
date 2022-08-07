@@ -12,8 +12,8 @@ public class Cuadromagico {
         int[][] cuadro = new int[N][N];
 
         j = jt;
-        while (num<=N*N){
-            if (cuadro[i][j]==0){
+        while(num<=N*N){
+            if(cuadro[i][j]==0){
                 cuadro[i][j]=num;
             } else {
                 i = it+1;
