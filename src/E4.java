@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.*;
 
 //author Jose Reyes
@@ -7,6 +8,7 @@ public class E4 {
 
         Scanner scn = new Scanner(System.in);
         Random rnd = new Random();
+        DecimalFormat df = new DecimalFormat("#,###.##");
         System.out.print("Ingrese la cantidad de numeros: ");
         int N = scn.nextInt();
 
@@ -16,10 +18,9 @@ public class E4 {
             int x = rnd.nextInt(100)+1;
             num[i]=x;
         }
-        String sc = Arrays.toString(num);
-        sc=sc.substring(1,N-1);
+        String sc = Arrays.toString(num).replace("[", "").replace("]", "");
         System.out.println("Sus numeros al azar son: " + sc);
         System.out.println("El mayor numero generado es: " + Arrays.stream(num).max().getAsInt());
-        System.out.print("El promedio de todos los numeros es: " + Arrays.stream(num).average().getAsDouble());
+        System.out.print("El promedio de todos los numeros es: " + df.format(Arrays.stream(num).average().getAsDouble()));
     }
 }
