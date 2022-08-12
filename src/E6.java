@@ -41,7 +41,7 @@ public class E6 {
             }
         }
         System.out.println("\nORDENANDO");
-        System.out.println("El nuevo vector A es: " + Arrays.toString(A));
-        System.out.println("El nuevo vector B es: " + Arrays.toString(B));
+        System.out.println("El nuevo vector A (todos los pares de B) es: " + Arrays.toString(A));
+        System.out.println("El nuevo vector B (todos los impares de A) es: " + Arrays.toString(B));
     }
 }
