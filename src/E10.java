@@ -8,10 +8,10 @@ public class E10 {
     public static int tarifa(int num){
         int COP = 0;
         if (25 < num && num <= 300){
-            COP = + 1500 * num;
+            COP = 1500 * num;
         }
         if (300 < num && num <= 500){
-            COP = + 2500 * num;
+            COP = 2500 * num;
         }
         return COP;
     }
@@ -33,7 +33,7 @@ public class E10 {
             if (peso > 0){
                 if (peso <= 500){
                     controlpeso.add(peso);
-                    if (controlpeso.stream().reduce(Integer::sum).get()<=1000){
+                    if (controlpeso.stream().reduce(Integer::sum).get()<=18000){
                         int C = tarifa(peso);
                         controlprecio += C;
                         i++;
